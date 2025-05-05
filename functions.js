@@ -16,7 +16,7 @@ function updateInput(target) {
   } else {
     if (
       value == "Ans" &&
-      (text[text.length - 1] == "s" || !isNaN(text[text.length - 1]))
+      (text[text.length - 1] == "s" || !isNaN(text[text.length - 1]) && text[text.length - 1] !== " ")
     ) {
       console.table(text);
       return;
