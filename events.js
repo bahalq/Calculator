@@ -46,8 +46,9 @@ document.addEventListener('click', (e) => {
     hisDiv.classList.remove('active');
   }
 });
-eqaul.addEventListener("click", (e) => {
-  result();
+eqaul.addEventListener("click", () => {
+  let text = input.textContent.split("");
+  if (!(text[text.length - 1] == " "))  result();
 });
 
 let hisBtn = document.querySelector('.hisBtn');
